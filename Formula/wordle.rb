@@ -5,20 +5,20 @@
 class Wordle < Formula
   desc "Play wordle in cli"
   homepage "https://github.com/ashish336b/homebrew-wordle"
-  version "0.0.17"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ashish336b/wordle/releases/download/v0.0.17/wordle_0.0.17_Darwin_x86_64.tar.gz"
-      sha256 "5b97511d368f56ab0ac4480de9ee29cbef3541a7dcee9645d75ca2b1558a7783"
+      url "https://github.com/ashish336b/wordle/releases/download/v1.0.0/wordle_1.0.0_Darwin_x86_64.tar.gz"
+      sha256 "5d027476b24e206a69c90994511603001662bc25a12872d6d897ebd7a901a1cd"
 
       def install
         bin.install "wordle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ashish336b/wordle/releases/download/v0.0.17/wordle_0.0.17_Darwin_arm64.tar.gz"
-      sha256 "25a0cdbb8e35999062dbca68e60bd097c6f2947ddfb8544a7f876876eb8c63a8"
+      url "https://github.com/ashish336b/wordle/releases/download/v1.0.0/wordle_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "b02ba32859ad76ecf99d7aa0810513872478c39d3dfae898634de6380f0ae208"
 
       def install
         bin.install "wordle"
@@ -28,16 +28,16 @@ class Wordle < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ashish336b/wordle/releases/download/v0.0.17/wordle_0.0.17_Linux_arm64.tar.gz"
-      sha256 "2ce1ec2c3b5249ed8413299fbcebd65b73bb3abd8c2e0c1ccdee9f20952a2793"
+      url "https://github.com/ashish336b/wordle/releases/download/v1.0.0/wordle_1.0.0_Linux_arm64.tar.gz"
+      sha256 "6d27e831243bf050f3cf908026ee150278f72889d767303ccaf028d817ec1c80"
 
       def install
         bin.install "wordle"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ashish336b/wordle/releases/download/v0.0.17/wordle_0.0.17_Linux_x86_64.tar.gz"
-      sha256 "b4c11757ce54c8f9101c0bd0e0cfac0078cda08080200182292ac4c05b755ce6"
+      url "https://github.com/ashish336b/wordle/releases/download/v1.0.0/wordle_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "e0a396a2a227a11084889c0a72468a9d7ff1c96d75f722ea93bf2bbb27d57d24"
 
       def install
         bin.install "wordle"
