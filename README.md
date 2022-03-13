@@ -1,2 +1,2 @@
 # homebrew-wordle
-this repository contains the Formula for brew package
+This repository contains the Formula for brew package
